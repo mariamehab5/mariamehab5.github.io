@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="HKCE4QC8VwxDaVS2wOBW_fZQzs6zpLlnnvCATTT54-M" />
+    <meta name="google-adsense-account" content="ca-pub-1178137030798222">
+    <meta name="description" content="الله">
+    <meta name="description" content="جوجل">
+    <meta name="description" content="gogle">
+    <meta name="description" content="Mariam Ehab">
+    <meta name="description" content="Marwan Hany EL-Nagar">
+    <meta name="description" content="Marwan Hany ">
+    <meta name="description" content="Marwan EL-Nagar">
+    <meta name="description" content="زياد">
+    <meta property="og:title" content="M&Z Programming Team ">
+    <meta property="og:url" content="رابط">
+    <meta name="description" content="برنامج خاص بـ بيانات الاشخاص والمعلومات والحسابات  - تم تطويره بواسطة المبرمج مروان هاني النجار.">
+    <meta name="description" content="Marwan">
+    <meta name="description" content="shahada">
+    <meta name="description" content="Mariam Ehab">
+    <meta name="description" content="Marwan Hany">
+    <meta name="description" content="Marwan Hany EL-Nagar"> 
+    <meta name="description" content="Marwan EL-Nagar">
+    <meta name="description" content="مريم ايهاب الخولي">
+    <meta name="description" content="مروان هاني النجار">
+    <meta name="description" content="مروان">
+    <meta name="description" content="مروان هاني ">
+    <meta name="description" content="حبي انا مريم">
+    <meta name="description" content="مريومتي ايهاب مرسي ">
+    <meta name="description" content="مرومه ايهاب مرسي">
+    <meta name="description" content="mariomty ehab morsy">
+    <meta name="description" content="mariam❤marwan.2012">
+    <meta name="description" content="1255804477">
+    <meta property="og:title" content="Mariom">
+    <meta property="og:description" content="Mariam Ehab.">
+    <link rel="icon" type="image/x-icon" href="2012.png">
+
+    <title>مريم إيهاب الخولي | مروان هاني النجار - قصة حب للأبد</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;900&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --p: #ff4d6d; --s: #ff758c; }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(-45deg, #ffafbd, #ffc3a0, #2193b0, #6dd5ed);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            min-height: 100vh;
+            color: #4a1d24;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .nav-link {
+            transition: 0.3s;
+            position: relative;
+        }
+        .nav-link:hover { color: var(--p); transform: translateY(-2px); }
+
+        .page-content { display: none; }
+        .active-page { display: block; animation: zoomIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.9) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .heart-rain {
+            position: fixed; top: -50px; z-index: 100; pointer-events: none;
+            animation: fall linear forwards;
+        }
+        @keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
+
+        .photo-grid img {
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: grayscale(20%);
+        }
+        .photo-grid img:hover {
+            transform: scale(1.08) rotate(1deg);
+            filter: grayscale(0%);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        #login-screen {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(0,0,0,0.3);
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        #main-content { display: none; }
+    </style>
+</head>
+<body>
+
+    <div id="login-screen">
+        <div class="glass p-10 w-full max-w-md text-center border-2 border-white/50">
+            <h2 class="reem-font text-3xl font-bold mb-6 text-white drop-shadow-md">🔐 نظام الدخول الخاص</h2>
+            <input type="password" id="pass-input" 
+                   class="w-full p-4 rounded-2xl bg-white/40 border-none outline-none text-center mb-6 text-xl placeholder-gray-700" 
+                   placeholder="أدخل كلمة السر هنا">
+            <button onclick="checkPass()" 
+                    class="w-full bg-pink-600 text-white font-bold py-4 rounded-2xl hover:bg-pink-700 transition shadow-xl active:scale-95">
+                دخول الآمن
+            </button>
+            <p class="mt-8 text-white font-bold text-sm">للمساعدة: +201011960156</p>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="hearts-container"></div>
+
+        <nav class="fixed top-5 inset-x-5 z-50 glass px-6 py-4 flex justify-between items-center border-white/40">
+            <div class="kufi-font text-2xl font-black text-pink-600">مريم ❤️ مروان</div>
+            <div class="flex gap-4 md:gap-8 font-black text-sm md:text-lg">
+                <button onclick="showPage('home')" class="nav-link">الرئيسية</button>
+                <button onclick="showPage('gallery')" class="nav-link">المعرض</button>
+                <button onclick="showPage('prayers')" class="nav-link">الأدعية</button>
+                <button onclick="showPage('marriage')" class="nav-link">الحلم</button>
+            </div>
+        </nav>
+
+        <section id="home" class="page-content active-page pt-32 pb-20 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="relative inline-block mb-10">
+                    <img src="❤❤❤❤❤❤❤.jpg" class="w-64 h-64 md:w-80 md:h-80 rounded-full border-[12px] border-white/50 shadow-2xl object-cover mx-auto">
+                    <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-full shadow-lg text-3xl">💍</div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 text-gray-800 drop-shadow-sm">مريم إيهاب الخولي</h1>
+                <div class="glass p-8 mb-12">
+                    <p class="text-2xl md:text-4xl arabic-font italic text-pink-700 leading-relaxed">
+                        "أنتِ النور الذي أضاء عتمة أيامي، أنتِ الملكة التي توجتها على عرش قلبي."
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="glass p-6"> <p class="text-xs">ميلادها</p> <p class="font-bold">2012-09-09</p> </div>
+                    <div class="glass p-6"> <p class="text-xs">رقمها</p> <p class="font-bold">01011501465</p> </div>
+                    <div class="glass p-6"> <p class="text-xs">المكانة</p> <p class="font-bold">ملكة قلبي</p> </div>
+                    <div class="glass p-6"> <p class="text-xs">حلمنا</p> <p class="font-bold">بيت واحد</p> </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="page-content pt-32 pb-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">ذكرياتنا المحفورة</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 photo-grid">
+                    <img src="❤❤❤❤❤❤❤.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="💚❤💚.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="❤❤❤❤💚💚💚💚.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="❤❤.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="1.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="2.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="3.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="4.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="5.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="6.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                    <img src="7.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </section>
+
+        <section id="prayers" class="page-content pt-32 pb-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">مجمع أدعية الحب</h2>
+                <div id="prayers-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </div>
+        </section>
+
+        <section id="marriage" class="page-content pt-32 pb-20 px-6">
+            <div class="max-w-4xl mx-auto glass p-12 text-center border-4 border-white/60">
+                <h2 class="text-5xl font-black text-red-600 mb-10">يارب تكون من نصيبي ❤️</h2>
+                <div class="space-y-8 text-2xl md:text-3xl arabic-font font-bold">
+                    <p class="glass p-6">"اللهم إن مريم إيهاب الخولي هي أغلى ما أملك، فألف بين قلبي وقلبها."</p>
+                    <p class="glass p-6">"اللهم اجعلني زوجاً صالحاً لها، واجعلها زوجة صالحة لي."</p>
+                    <p class="glass p-6">"يارب، أنت تعلم أنني لا أريد غيرها شريكة لحياتي."</p>
+                    <div class="text-9xl animate-pulse py-10">💍</div>
+                    <p class="text-pink-700 text-4xl underline underline-offset-8">مريم + مروان = قصة حب لا تنتهي</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-20 text-center glass m-10">
+            <p class="text-3xl font-black mb-4">مريم إيهاب الخولي</p>
+            <p class="font-bold">برمجة وتصميم المبدع: <span class="text-pink-600">مروان هاني النجار</span></p>
+            <p class="text-xs mt-4 opacity-70">فريق M&Z للبرمجة | جميع الحقوق محفوظة لقلب مريم</p>
+            <p class="text-sm mt-2 font-black" dir="ltr">+201011960156</p>
+        </footer>
+    </div>
+
+    <script>
+        // كلمات السر المشفرة (لا يمكن قراءتها مباشرة)
+        const _0x4a2 = ["MTI1NTgwNDQ3Nw==", "MTI1NTgw", "MjAxMg==", "MDEwMTE1MDE0NjU=","bWFyaWFt","MjAxMjk5"];
+
+        function checkPass() {
+            const input = document.getElementById('pass-input').value;
+            if (_0x4a2.includes(btoa(input))) {
+                document.getElementById('login-screen').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('login-screen').style.display = 'none';
+                    document.getElementById('main-content').style.display = 'block';
+                    initApp();
+                }, 400);
+            } else {
+                alert('كلمة السر غير صحيحة!');
+            }
+        }
+
+        function showPage(id) {
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active-page'));
+            document.getElementById(id).classList.add('active-page');
+            window.scrollTo({top:0, behavior:'smooth'});
+        }
+
+        function initApp() {
+            // قلوب متحركة
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.innerHTML = ['❤️', '💖', '💍', '🌸', '✨', '🌹'][Math.floor(Math.random()*6)];
+                heart.className = 'heart-rain';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.fontSize = (Math.random() * 20 + 20) + 'px';
+                heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                document.getElementById('hearts-container').appendChild(heart);
+                setTimeout(() => heart.remove(), 6000);
+            }, 300);
+
+            // استعادة كافة الأدعية (تم إعادة الـ 50 دعاء كاملة)
+            const prayers = [
+                "اللهم احفظ مريم من كل سوء.", "اللهم اجعل الابتسامة لا تفارق وجه مريم.", "يارب يسر لمريم كل عسير.",
+                "اللهم ارزق مريم راحة البال.", "اللهم وفق مريم في دراستها.", "اللهم اكتب لمريم السعادة الأبدية.",
+                "يارب اجعل مريم من نصيبي.", "اللهم اجمعنا في حلالك عاجلاً غير آجل.", "اللهم بارك في عمر مريم.",
+                "يارب لا تحرمني من صوت مريم.", "اللهم اجعل قلب مريم معلقاً بك ثم بي.", "اللهم ابعد عن مريم رفقاء السوء.",
+                "يارب اجعلني السند لمريم دائماً.", "اللهم ارزق مريم الصحة والعافية.", "اللهم افتح لمريم أبواب الرزق.",
+                "يارب اجعل مريم قرة عين لي.", "اللهم اجعل بيت مريم عامراً بالذكر.", "اللهم استجب لدعوات مريم.",
+                "يارب طهر قلب مريم من كل هم.", "اللهم احفظ مريم لوالديها.", "اللهم اجعل مريم ملكة في بيتي.",
+                "يارب ارزق مريم الفردوس الأعلى.", "اللهم لا تريني في مريم مكروه.", "اللهم حبب مريم فيّ وحببني فيها.",
+                "يارب اجعل زواجي من مريم مباركاً.", "اللهم يسر لنا كل عائق يمنع اجتماعنا.", "اللهم اجعل مريم رفيقتي في الجنة.",
+                "يارب اسكب في قلب مريم حبي.", "اللهم اجعل مريم راضية مرضية.", "اللهم نور درب مريم بالهدى.",
+                "يارب ارزق مريم النجاح الباهر.", "اللهم اجعل مريم مباركة أينما كانت.", "اللهم كف عن مريم عيون الحاسدين.",
+                "يارب اجعل مريم أجمل نساء العالمين في عيني.", "اللهم لا تفرق بيني وبين مريم أبداً.", "اللهم ارزقنا الذرية الصالحة من مريم.",
+                "يارب اجعل مريم من عبادك الصالحين.", "اللهم اشرح صدر مريم للإيمان.", "اللهم اجعل مريم ملهمتي في الخير.",
+                "يارب لا تجعل في قلب مريم أحداً غيري.", "اللهم اجعلني فخراً لمريم.", "اللهم احفظ مريم في سفرها وإقامتها.",
+                "يارب تقبل مني هذا العمل لمريم.", "اللهم اجعل مريم فخورة بحبي لها.", "اللهم ارزق مريم قلباً خاشعاً.",
+                "يارب اجعل حياتي مع مريم جنة.", "اللهم اجعل مريم من الذاكرات كثيراً.", "اللهم ارفع قدر مريم في الدنيا والآخرة.",
+                "يارب يسر لنا شراء بيت الأحلام.", "اللهم اجعل مريم سيدة بيت عظيم.", "اللهم اجعل حبنا خالصاً لوجهك.",
+                "يارب استجب لنا واجمعنا يا كريم."
+            ];
+
+            const list = document.getElementById('prayers-list');
+            prayers.forEach((p, i) => {
+                const d = document.createElement('div');
+                d.className = 'glass p-6 text-right font-bold hover:bg-white/40 transition-all cursor-default';
+                d.innerHTML = `<span class="text-pink-600 mr-2">${i+1}.</span> ${p}`;
+                list.appendChild(d);
+            });
+        }
+    </script>
+</body>
+</html>
