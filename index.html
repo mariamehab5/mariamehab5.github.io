@@ -5,273 +5,967 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="HKCE4QC8VwxDaVS2wOBW_fZQzs6zpLlnnvCATTT54-M" />
     <meta name="google-adsense-account" content="ca-pub-1178137030798222">
-    <meta name="description" content="الله">
-    <meta name="description" content="جوجل">
-    <meta name="description" content="gogle">
-    <meta name="description" content="Mariam Ehab">
-    <meta name="description" content="Marwan Hany EL-Nagar">
-    <meta name="description" content="Marwan Hany ">
-    <meta name="description" content="Marwan EL-Nagar">
-    <meta name="description" content="زياد">
-    <meta property="og:title" content="M&Z Programming Team ">
-    <meta property="og:url" content="رابط">
-    <meta name="description" content="برنامج خاص بـ بيانات الاشخاص والمعلومات والحسابات  - تم تطويره بواسطة المبرمج مروان هاني النجار.">
-    <meta name="description" content="Marwan">
-    <meta name="description" content="shahada">
-    <meta name="description" content="Mariam Ehab">
-    <meta name="description" content="Marwan Hany">
-    <meta name="description" content="Marwan Hany EL-Nagar"> 
-    <meta name="description" content="Marwan EL-Nagar">
-    <meta name="description" content="مريم ايهاب الخولي">
-    <meta name="description" content="مروان هاني النجار">
-    <meta name="description" content="مروان">
-    <meta name="description" content="مروان هاني ">
-    <meta name="description" content="حبي انا مريم">
-    <meta name="description" content="مريومتي ايهاب مرسي ">
-    <meta name="description" content="مرومه ايهاب مرسي">
-    <meta name="description" content="mariomty ehab morsy">
-    <meta name="description" content="mariam❤marwan.2012">
-    <meta name="description" content="1255804477">
-    <meta property="og:title" content="Mariom">
-    <meta property="og:description" content="Mariam Ehab.">
+    
+    <!-- Meta Tags for SEO and Sharing -->
+    <meta name="description" content="موقع خاص بـ قصة حب مروان هاني ومريم إيهاب - تم تطويره بواسطة المبرمج مروان هاني النجار.">
+    <meta name="keywords" content="الله, جوجل, Mariam Ehab, Marwan Hany EL-Nagar, Marwan, مريم ايهاب الخولي, مروان هاني النجار, قصة حب, زواج">
+    <meta name="author" content="Marwan Hany EL-Nagar">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="M&Z Programming Team - مريم ومروان">
+    <meta property="og:description" content="قصة حب لا تنتهي بين مريم ومروان.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="2012.png">
+    
     <link rel="icon" type="image/x-icon" href="2012.png">
-
     <title>مريم إيهاب الخولي | مروان هاني النجار - قصة حب للأبد</title>
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;900&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;800;900&family=Reem+Kufi:wght@400;500;700&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        :root { --p: #ff4d6d; --s: #ff758c; }
+        /* ==========================================================================
+           المتغيرات الأساسية وتنسيقات الجذور
+           ========================================================================== */
+        :root { 
+            --primary-pink: #ff4d6d; 
+            --secondary-pink: #ff758c; 
+            --dark-red: #4a1d24;
+            --marwan-blue: #2b6cb0;
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.4);
+        }
         
         body {
             font-family: 'Cairo', sans-serif;
-            background: linear-gradient(-45deg, #ffafbd, #ffc3a0, #2193b0, #6dd5ed);
+            background: linear-gradient(-45deg, #ffafbd, #ffc3a0, #ffb1c1, #ffdde1);
             background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            animation: gradientBG 15s ease infinite;
             min-height: 100vh;
-            color: #4a1d24;
+            color: var(--dark-red);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
-        @keyframes gradient {
+        /* تخصيص الخطوط العربية الجميلة */
+        .amiri-font { font-family: 'Amiri', serif; }
+        .kufi-font { font-family: 'Reem Kufi', sans-serif; }
+        .tajawal-font { font-family: 'Tajawal', sans-serif; }
+
+        /* شريط التمرير (Scrollbar) المخصص ليليق بالموقع */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #ffe4e1; }
+        ::-webkit-scrollbar-thumb { background: var(--secondary-pink); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-pink); }
+
+        /* حركة الخلفية المستمرة */
+        @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
+        /* ==========================================================================
+           تأثيرات الزجاج والعناصر (Glassmorphism)
+           ========================================================================== */
         .glass {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
             border-radius: 30px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass:hover {
+            box-shadow: 0 12px 40px rgba(255, 77, 109, 0.2);
+            border-color: rgba(255, 255, 255, 0.6);
         }
 
+        /* شريط التنقل العلوي */
         .nav-link {
-            transition: 0.3s;
+            transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            overflow: hidden;
         }
-        .nav-link:hover { color: var(--p); transform: translateY(-2px); }
-
-        .page-content { display: none; }
-        .active-page { display: block; animation: zoomIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-        @keyframes zoomIn {
-            from { opacity: 0; transform: scale(0.9) translateY(20px); }
-            to { opacity: 1; transform: scale(1) translateY(0); }
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--primary-pink);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: right;
+        }
+        .nav-link:hover::before, .nav-link.active-nav::before {
+            transform: scaleX(1);
+        }
+        .nav-link:hover, .nav-link.active-nav { 
+            color: var(--primary-pink); 
+            background: rgba(255,255,255,0.3);
         }
 
-        .heart-rain {
-            position: fixed; top: -50px; z-index: 100; pointer-events: none;
+        /* ==========================================================================
+           حركات الانتقال بين الصفحات والأنيميشن
+           ========================================================================== */
+        .page-content { 
+            display: none; 
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .active-page { 
+            display: block; 
+            animation: fadeInPage 0.8s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+
+        @keyframes fadeInPage {
+            0% { opacity: 0; transform: scale(0.95) translateY(30px); filter: blur(5px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+        }
+
+        /* تساقط القلوب والجسيمات المتنوعة */
+        .particle {
+            position: fixed; 
+            top: -50px; 
+            z-index: 10; 
+            pointer-events: none;
             animation: fall linear forwards;
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
         }
-        @keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
-
-        .photo-grid img {
-            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            filter: grayscale(20%);
-        }
-        .photo-grid img:hover {
-            transform: scale(1.08) rotate(1deg);
-            filter: grayscale(0%);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        @keyframes fall { 
+            0% { transform: translateY(-50px) rotate(0deg) scale(0.8); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg) scale(1.2); opacity: 0; } 
         }
 
+        /* ==========================================================================
+           تنسيقات الصور والمعرض
+           ========================================================================== */
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            cursor: pointer;
+        }
+        .photo-card img {
+            transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: grayscale(15%) brightness(90%);
+        }
+        .photo-card:hover img {
+            transform: scale(1.1) rotate(2deg);
+            filter: grayscale(0%) brightness(110%);
+        }
+        .photo-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+            opacity: 0;
+            transition: 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            color: white;
+        }
+        .photo-card:hover .photo-overlay { opacity: 1; }
+
+        /* نافذة عرض الصور المكبرة (Lightbox) */
+        #lightbox {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            transition: opacity 0.4s ease;
+        }
+        .lightbox-content {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: scale(0.9);
+        }
+        #lightbox.show .lightbox-content {
+            transform: scale(1);
+        }
+        .lightbox-nav-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        .lightbox-nav-btn:hover {
+            background: var(--primary-pink);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px var(--primary-pink);
+        }
+
+        /* ==========================================================================
+           تنسيقات إضافية للخط الزمني وشاشة الدخول
+           ========================================================================== */
         #login-screen {
-            position: fixed; inset: 0; z-index: 9999;
-            background: rgba(0,0,0,0.3);
+            position: fixed; inset: 0; z-index: 99999;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
             display: flex; align-items: center; justify-content: center;
+            transition: opacity 0.6s ease;
         }
+        .pulse-lock { animation: pulseLock 2s infinite; }
+        @keyframes pulseLock {
+            0% { transform: scale(1); text-shadow: 0 0 0 rgba(255,255,255,0); }
+            50% { transform: scale(1.1); text-shadow: 0 0 20px rgba(255,255,255,0.8); }
+            100% { transform: scale(1); text-shadow: 0 0 0 rgba(255,255,255,0); }
+        }
+
+        .timeline {
+            position: relative; max-width: 1200px; margin: 0 auto;
+        }
+        .timeline::after {
+            content: ''; position: absolute; width: 4px; background: var(--primary-pink);
+            top: 0; bottom: 0; left: 50%; margin-left: -2px; border-radius: 2px; opacity: 0.5;
+        }
+        .timeline-item {
+            padding: 10px 40px; position: relative; background-color: inherit; width: 50%;
+        }
+        .timeline-item::after {
+            content: '❤️'; position: absolute; width: 30px; height: 30px;
+            right: -15px; background-color: white; border: 4px solid var(--secondary-pink);
+            top: 15px; border-radius: 50%; z-index: 1; display: flex; align-items: center; justify-content: center;
+            font-size: 14px; box-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+        }
+        .left { left: 0; text-align: left; }
+        .right { left: 50%; text-align: right; }
+        .left::after { right: -15px; }
+        .right::after { left: -15px; }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; text-align: right;}
+            .timeline-item::after { left: 15px; right: auto; }
+            .right { left: 0%; }
+        }
+
+        .main-img-container::before {
+            content: ''; position: absolute; inset: -10px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-pink), #ffc3a0, #fff);
+            z-index: -1;
+            animation: spinBorder 4s linear infinite;
+        }
+        @keyframes spinBorder { 100% { transform: rotate(360deg); } }
 
         #main-content { display: none; }
+        
+        /* عدادات العمر */
+        .age-box {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .age-value { font-size: 1.8rem; font-weight: 900; }
+        .age-label { font-size: 0.8rem; color: #666; font-weight: bold; }
     </style>
 </head>
 <body>
 
+    <!-- ================= شاشة تسجيل الدخول السري ================= -->
     <div id="login-screen">
-        <div class="glass p-10 w-full max-w-md text-center border-2 border-white/50">
-            <h2 class="reem-font text-3xl font-bold mb-6 text-white drop-shadow-md">🔐 نظام الدخول الخاص</h2>
-            <input type="password" id="pass-input" 
-                   class="w-full p-4 rounded-2xl bg-white/40 border-none outline-none text-center mb-6 text-xl placeholder-gray-700" 
-                   placeholder="أدخل كلمة السر هنا">
+        <div class="glass p-10 w-11/12 max-w-md text-center border-2 border-white/50 relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-pink-400 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse"></div>
+            <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-yellow-200 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse delay-75"></div>
+            
+            <div class="text-6xl mb-4 pulse-lock">🔐</div>
+            <h2 class="kufi-font text-3xl font-bold mb-2 text-white drop-shadow-md">بوابة الحب السري</h2>
+            <p class="text-white/80 mb-6 text-sm">هذا المكان مخصص لقلبين فقط..</p>
+            
+            <div class="relative">
+                <i class="fa-solid fa-key absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl"></i>
+                <input type="password" id="pass-input" 
+                       class="w-full p-4 pr-12 rounded-2xl bg-white/50 border-2 border-transparent focus:border-pink-500 outline-none text-center mb-6 text-xl placeholder-gray-600 transition-all font-bold shadow-inner" 
+                       placeholder="كلمة السر الخاصة بنا">
+            </div>
+            
             <button onclick="checkPass()" 
-                    class="w-full bg-pink-600 text-white font-bold py-4 rounded-2xl hover:bg-pink-700 transition shadow-xl active:scale-95">
-                دخول الآمن
+                    class="w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold py-4 rounded-2xl hover:from-pink-600 hover:to-rose-600 transition-all shadow-[0_10px_20px_rgba(255,77,109,0.3)] hover:shadow-[0_15px_25px_rgba(255,77,109,0.5)] active:scale-95 text-lg flex items-center justify-center gap-2">
+                <span>فتح القلب</span>
+                <i class="fa-solid fa-heart text-white"></i>
             </button>
-            <p class="mt-8 text-white font-bold text-sm">للمساعدة: +201011960156</p>
+            
+            <p class="mt-8 text-white/90 font-bold text-sm tajawal-font">برمجة مروان هاني لملكة قلبه</p>
         </div>
     </div>
 
+    <!-- ================= المحتوى الرئيسي للموقع ================= -->
     <div id="main-content">
         <div id="hearts-container"></div>
 
-        <nav class="fixed top-5 inset-x-5 z-50 glass px-6 py-4 flex justify-between items-center border-white/40">
-            <div class="kufi-font text-2xl font-black text-pink-600">مريم ❤️ مروان</div>
-            <div class="flex gap-4 md:gap-8 font-black text-sm md:text-lg">
-                <button onclick="showPage('home')" class="nav-link">الرئيسية</button>
-                <button onclick="showPage('gallery')" class="nav-link">المعرض</button>
-                <button onclick="showPage('prayers')" class="nav-link">الأدعية</button>
-                <button onclick="showPage('marriage')" class="nav-link">الحلم</button>
+        <!-- شريط التنقل العلوي -->
+        <nav class="fixed top-3 inset-x-3 md:top-5 md:inset-x-5 z-40 glass px-4 md:px-8 py-3 md:py-4 flex flex-col md:flex-row justify-between items-center gap-3 shadow-lg">
+            <div class="kufi-font text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-red-500 flex items-center gap-2 drop-shadow-sm">
+                مريم <i class="fa-solid fa-heart animate-pulse text-red-500 text-xl"></i> مروان
+            </div>
+            <!-- تم إضافة أقسام جديدة للشريط -->
+            <div class="flex flex-wrap justify-center gap-2 md:gap-4 font-bold text-xs md:text-sm tajawal-font">
+                <button onclick="showPage('home', this)" class="nav-link active-nav"><i class="fa-solid fa-house ml-1"></i> مملكتنا</button>
+                <button onclick="showPage('story', this)" class="nav-link"><i class="fa-solid fa-book-open ml-1"></i> حكايتنا</button>
+                <button onclick="showPage('gallery', this)" class="nav-link"><i class="fa-solid fa-images ml-1"></i> ذكرياتنا</button>
+                <button onclick="showPage('reasons', this)" class="nav-link"><i class="fa-solid fa-list-check ml-1"></i> أسباب حبي</button>
+                <button onclick="showPage('promises', this)" class="nav-link"><i class="fa-solid fa-hand-holding-heart ml-1"></i> وعودي لكِ</button>
+                <button onclick="showPage('messages', this)" class="nav-link"><i class="fa-solid fa-envelope-open-text ml-1"></i> رسائلي</button>
+                <button onclick="showPage('prayers', this)" class="nav-link"><i class="fa-solid fa-hands-praying ml-1"></i> دعائي لكِ</button>
+                <button onclick="showPage('marriage', this)" class="nav-link"><i class="fa-solid fa-ring ml-1"></i> الحلم</button>
             </div>
         </nav>
 
-        <section id="home" class="page-content active-page pt-32 pb-20 px-6">
-            <div class="max-w-5xl mx-auto text-center">
-                <div class="relative inline-block mb-10">
-                    <img src="❤❤❤❤❤❤❤.jpg" class="w-64 h-64 md:w-80 md:h-80 rounded-full border-[12px] border-white/50 shadow-2xl object-cover mx-auto">
-                    <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-full shadow-lg text-3xl">💍</div>
+        <!-- ================= الصفحة الرئيسية ================= -->
+        <section id="home" class="page-content active-page pt-36 md:pt-40 pb-20 px-4 md:px-6">
+            <div class="max-w-6xl mx-auto text-center">
+                <!-- الصورة الرئيسية -->
+                <div class="main-img-container inline-block mb-10 relative">
+                    <img src="❤❤❤❤❤❤❤.jpg" alt="مريم ومروان" class="w-56 h-56 md:w-80 md:h-80 rounded-full border-[8px] border-white/80 shadow-2xl object-cover mx-auto" onerror="this.src='https://via.placeholder.com/400x400/ff758c/ffffff?text=M+%26+M';">
+                    <div class="absolute -bottom-2 -right-2 bg-white/90 backdrop-blur-sm p-4 rounded-full shadow-xl text-3xl md:text-4xl animate-bounce">💍</div>
+                    <div class="absolute -top-2 -left-2 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-xl text-2xl md:text-3xl animate-pulse text-red-500">❤️</div>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-black mb-6 text-gray-800 drop-shadow-sm">مريم إيهاب الخولي</h1>
-                <div class="glass p-8 mb-12">
-                    <p class="text-2xl md:text-4xl arabic-font italic text-pink-700 leading-relaxed">
-                        "أنتِ النور الذي أضاء عتمة أيامي، أنتِ الملكة التي توجتها على عرش قلبي."
+
+                <h1 class="text-5xl md:text-7xl font-black mb-4 text-gray-800 drop-shadow-md tajawal-font">مريم إيهاب الخولي</h1>
+                <h2 class="text-2xl md:text-3xl text-pink-600 font-bold mb-8 amiri-font">ملكة متوجة على عرش قلب مروان</h2>
+                
+                <div class="glass p-8 mb-12 relative">
+                    <i class="fa-solid fa-quote-right absolute top-4 right-4 text-4xl text-pink-300 opacity-50"></i>
+                    <p class="text-2xl md:text-4xl amiri-font italic text-pink-800 leading-relaxed z-10 relative">
+                        "أنتِ النور الذي أضاء عتمة أيامي، أنتِ الملكة التي توجتها على عرش قلبي. لم تكوني يوماً مجرد صدفة، بل كنتِ دعاءً استجابه الله لي بعد طول انتظار."
                     </p>
+                    <i class="fa-solid fa-quote-left absolute bottom-4 left-4 text-4xl text-pink-300 opacity-50"></i>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="glass p-6"> <p class="text-xs">ميلادها</p> <p class="font-bold">2012-09-09</p> </div>
-                    <div class="glass p-6"> <p class="text-xs">رقمها</p> <p class="font-bold">01011501465</p> </div>
-                    <div class="glass p-6"> <p class="text-xs">المكانة</p> <p class="font-bold">ملكة قلبي</p> </div>
-                    <div class="glass p-6"> <p class="text-xs">حلمنا</p> <p class="font-bold">بيت واحد</p> </div>
+
+                <!-- ================= عدادات العمر المزدوجة ================= -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    
+                    <!-- عداد عمر مريم -->
+                    <div class="glass p-6 bg-pink-50/60 border-2 border-pink-300 hover:scale-105 transition-transform duration-500">
+                        <div class="flex items-center justify-center gap-3 mb-6">
+                            <i class="fa-solid fa-crown text-3xl text-pink-500"></i>
+                            <h3 class="text-2xl font-black text-pink-700 tajawal-font">عمر أميرتي مريم</h3>
+                            <i class="fa-solid fa-star text-3xl text-pink-500"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4 font-bold">منذ إشراقتها في 9 سبتمبر 2012</p>
+                        
+                        <div class="grid grid-cols-3 gap-2 md:gap-4">
+                            <div class="age-box"><div id="m-years" class="age-value text-pink-600">0</div><div class="age-label">سنة</div></div>
+                            <div class="age-box"><div id="m-months" class="age-value text-pink-600">0</div><div class="age-label">شهر</div></div>
+                            <div class="age-box"><div id="m-days" class="age-value text-pink-600">0</div><div class="age-label">يوم</div></div>
+                            <div class="age-box"><div id="m-hours" class="age-value text-pink-500">0</div><div class="age-label">ساعة</div></div>
+                            <div class="age-box"><div id="m-minutes" class="age-value text-pink-500">0</div><div class="age-label">دقيقة</div></div>
+                            <div class="age-box"><div id="m-seconds" class="age-value text-pink-500">0</div><div class="age-label">ثانية</div></div>
+                        </div>
+                    </div>
+
+                    <!-- عداد عمر مروان -->
+                    <div class="glass p-6 bg-blue-50/60 border-2 border-blue-300 hover:scale-105 transition-transform duration-500">
+                        <div class="flex items-center justify-center gap-3 mb-6">
+                            <i class="fa-solid fa-shield-halved text-3xl text-blue-500"></i>
+                            <h3 class="text-2xl font-black text-blue-700 tajawal-font">عمر فارسك مروان</h3>
+                            <i class="fa-solid fa-sword text-3xl text-blue-500"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4 font-bold">منذ فجر 25 يونيو 2010</p>
+                        
+                        <div class="grid grid-cols-3 gap-2 md:gap-4">
+                            <div class="age-box"><div id="ma-years" class="age-value text-blue-600">0</div><div class="age-label">سنة</div></div>
+                            <div class="age-box"><div id="ma-months" class="age-value text-blue-600">0</div><div class="age-label">شهر</div></div>
+                            <div class="age-box"><div id="ma-days" class="age-value text-blue-600">0</div><div class="age-label">يوم</div></div>
+                            <div class="age-box"><div id="ma-hours" class="age-value text-blue-500">0</div><div class="age-label">ساعة</div></div>
+                            <div class="age-box"><div id="ma-minutes" class="age-value text-blue-500">0</div><div class="age-label">دقيقة</div></div>
+                            <div class="age-box"><div id="ma-seconds" class="age-value text-blue-500">0</div><div class="age-label">ثانية</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معلومات مختصرة بدون رقم الهاتف -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <div class="glass p-6 hover:-translate-y-2 transition-transform"> 
+                        <i class="fa-solid fa-cake-candles text-3xl text-pink-500 mb-3"></i>
+                        <p class="text-sm text-gray-600 font-bold">تاريخ ميلاد الملكة</p> 
+                        <p class="font-black text-lg text-gray-800 mt-1">2012-09-09</p> 
+                    </div>
+                    <div class="glass p-6 hover:-translate-y-2 transition-transform"> 
+                        <i class="fa-solid fa-heart-pulse text-3xl text-red-500 mb-3"></i>
+                        <p class="text-sm text-gray-600 font-bold">الروح والقلب</p> 
+                        <p class="font-black text-lg text-gray-800 mt-1">ينبض باسمك</p> 
+                    </div>
+                    <div class="glass p-6 hover:-translate-y-2 transition-transform"> 
+                        <i class="fa-solid fa-crown text-3xl text-yellow-500 mb-3"></i>
+                        <p class="text-sm text-gray-600 font-bold">المكانة</p> 
+                        <p class="font-black text-lg text-gray-800 mt-1">ملكة قلبي وحياتي</p> 
+                    </div>
+                    <div class="glass p-6 hover:-translate-y-2 transition-transform"> 
+                        <i class="fa-solid fa-house-chimney-heart text-3xl text-rose-500 mb-3"></i>
+                        <p class="text-sm text-gray-600 font-bold">حلمنا الأكبر</p> 
+                        <p class="font-black text-lg text-gray-800 mt-1">بيت واحد يجمعنا</p> 
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="gallery" class="page-content pt-32 pb-20 px-6">
+        <!-- ================= قسم قصتنا (Timeline) ================= -->
+        <section id="story" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12">ذكرياتنا المحفورة</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 photo-grid">
-                    <img src="❤❤❤❤❤❤❤.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="💚❤💚.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="❤❤❤❤💚💚💚💚.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="❤❤.jpg" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="1.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="2.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="3.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="4.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="5.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="6.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
-                    <img src="7.png" class="rounded-3xl h-80 w-full object-cover glass p-2" onerror="this.style.display='none'">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-4 tajawal-font">حكايتنا خطوة بخطوة</h2>
+                    <p class="text-xl text-pink-600 amiri-font">كيف بدأت قصة أجمل حب في الوجود</p>
+                </div>
+                <div class="timeline" id="timeline-container">
+                    <!-- يولد برمجياً -->
                 </div>
             </div>
         </section>
 
-        <section id="prayers" class="page-content pt-32 pb-20 px-6">
+        <!-- ================= قسم أسباب حبي لكِ ================= -->
+        <section id="reasons" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12">مجمع أدعية الحب</h2>
-                <div id="prayers-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-            </div>
-        </section>
-
-        <section id="marriage" class="page-content pt-32 pb-20 px-6">
-            <div class="max-w-4xl mx-auto glass p-12 text-center border-4 border-white/60">
-                <h2 class="text-5xl font-black text-red-600 mb-10">يارب تكون من نصيبي ❤️</h2>
-                <div class="space-y-8 text-2xl md:text-3xl arabic-font font-bold">
-                    <p class="glass p-6">"اللهم إن مريم إيهاب الخولي هي أغلى ما أملك، فألف بين قلبي وقلبها."</p>
-                    <p class="glass p-6">"اللهم اجعلني زوجاً صالحاً لها، واجعلها زوجة صالحة لي."</p>
-                    <p class="glass p-6">"يارب، أنت تعلم أنني لا أريد غيرها شريكة لحياتي."</p>
-                    <div class="text-9xl animate-pulse py-10">💍</div>
-                    <p class="text-pink-700 text-4xl underline underline-offset-8">مريم + مروان = قصة حب لا تنتهي</p>
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-4 tajawal-font">لماذا أحبكِ يا مريم؟</h2>
+                    <p class="text-xl text-pink-600 amiri-font">ألف سبب وسبب يربطني بكِ، وهذه بعضها...</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="reasons-container">
+                    <!-- يولد برمجياً -->
                 </div>
             </div>
         </section>
 
-        <footer class="py-20 text-center glass m-10">
-            <p class="text-3xl font-black mb-4">مريم إيهاب الخولي</p>
-            <p class="font-bold">برمجة وتصميم المبدع: <span class="text-pink-600">مروان هاني النجار</span></p>
-            <p class="text-xs mt-4 opacity-70">فريق M&Z للبرمجة | جميع الحقوق محفوظة لقلب مريم</p>
-            <p class="text-sm mt-2 font-black" dir="ltr">+201011960156</p>
+        <!-- ================= قسم وعودي لكِ ================= -->
+        <section id="promises" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-4 tajawal-font">وعود مروان لمريم</h2>
+                    <p class="text-xl text-pink-600 amiri-font">عهد الرجال لا ينقض، وهذا عهدي لكِ أمام الله</p>
+                </div>
+                <div class="space-y-6" id="promises-container">
+                    <!-- يولد برمجياً -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= قسم معرض الصور ================= -->
+        <section id="gallery" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-4 tajawal-font">ألبوم ذكرياتنا المحفورة</h2>
+                    <p class="text-xl text-pink-600 amiri-font">كل صورة تخفي خلفها نبضة قلب وألف شعور <br> <span class="text-sm text-gray-500">(اضغط على الصورة لتكبيرها)</span></p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+                    <!-- يولد برمجياً -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= قسم رسائل الحب ================= -->
+        <section id="messages" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-4 tajawal-font">رسائل من أعماق القلب</h2>
+                    <p class="text-xl text-pink-600 amiri-font">كلمات لم تكتب بحبر، بل بدم القلب</p>
+                </div>
+                <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" id="messages-container">
+                    <!-- يولد برمجياً -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= قسم الأدعية ================= -->
+        <section id="prayers" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-4 tajawal-font">مجمع أدعية الحب</h2>
+                    <p class="text-xl text-pink-600 amiri-font">الحب دعاء، وأنتِ دعائي المفضل لله في كل سجدة</p>
+                </div>
+                <div id="prayers-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    <!-- يولد برمجياً -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= قسم الحلم (الزواج) ================= -->
+        <section id="marriage" class="page-content pt-36 md:pt-40 pb-20 px-4 md:px-6">
+            <div class="max-w-4xl mx-auto glass p-8 md:p-16 text-center border-4 border-pink-300/60 shadow-[0_0_50px_rgba(255,105,180,0.2)]">
+                <i class="fa-solid fa-house-chimney-heart text-6xl text-pink-500 mb-6 drop-shadow-lg"></i>
+                <h2 class="text-5xl md:text-6xl font-black text-red-600 mb-10 tajawal-font drop-shadow-md">يارب تكوني من نصيبي ❤️</h2>
+                
+                <div class="space-y-8 text-2xl md:text-3xl amiri-font font-bold text-gray-800">
+                    <div class="glass p-6 md:p-8 hover:bg-white/40 transition-colors border-l-4 border-r-4 border-pink-400">
+                        <p>"اللهم إن مريم إيهاب الخولي هي أغلى ما أملك، فألف بين قلبي وقلبها واجمعنا تحت سقف واحد نعبدك فيه ونشكرك."</p>
+                    </div>
+                    <div class="glass p-6 md:p-8 hover:bg-white/40 transition-colors border-l-4 border-r-4 border-pink-400">
+                        <p>"اللهم اجعلني زوجاً صالحاً لها، واجعلها زوجة صالحة لي، وارزقنا المودة والرحمة والسكينة الأبدية."</p>
+                    </div>
+                    <div class="glass p-6 md:p-8 hover:bg-white/40 transition-colors border-l-4 border-r-4 border-pink-400">
+                        <p>"يارب، أنت تعلم أنني لا أريد غيرها شريكة لحياتي وأماً لأولادي ورفيقة لدربي في الدنيا والآخرة."</p>
+                    </div>
+                    
+                    <div class="py-12 relative flex justify-center items-center">
+                        <div class="absolute w-full h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent"></div>
+                        <div class="text-7xl md:text-9xl animate-pulse bg-white/50 rounded-full p-6 z-10 shadow-xl border-4 border-pink-200">💍</div>
+                    </div>
+                    
+                    <div class="inline-block glass p-6 rounded-3xl mt-8">
+                        <p class="text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-red-600 text-3xl md:text-5xl font-black tajawal-font">
+                            مريم + مروان = قصة حب لا تنتهي ∞
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= الفوتر ================= -->
+        <footer class="py-12 text-center glass mx-4 md:mx-10 mb-10 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-500 to-transparent"></div>
+            <div class="flex justify-center gap-4 mb-6 text-2xl text-pink-600">
+                <i class="fa-solid fa-heart animate-bounce"></i>
+                <i class="fa-solid fa-infinity"></i>
+                <i class="fa-solid fa-heart animate-bounce" style="animation-delay: 0.5s;"></i>
+            </div>
+            <p class="text-3xl md:text-4xl font-black mb-4 tajawal-font text-gray-800">مريم إيهاب الخولي</p>
+            <p class="text-lg md:text-xl font-bold text-gray-700">تمت البرمجة والتصميم بكل حب بواسطة: <span class="text-pink-600 font-black">مروان هاني النجار</span></p>
+            <p class="text-sm mt-6 opacity-70 font-bold">فريق M&Z للبرمجة | جميع الحقوق محفوظة لقلب مريم © 2026</p>
         </footer>
     </div>
 
-    <script>
-        // كلمات السر المشفرة (لا يمكن قراءتها مباشرة)
-        const _0x4a2 = ["MTI1NTgwNDQ3Nw==", "MTI1NTgw", "MjAxMg==", "MDEwMTE1MDE0NjU=","bWFyaWFt","MjAxMjk5"];
+    <!-- ================= Lightbox للصور ================= -->
+    <div id="lightbox" class="fixed inset-0 z-[100000] hidden bg-black/90 flex-col items-center justify-center opacity-0">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 md:top-10 md:right-10 text-white/70 hover:text-pink-500 text-4xl md:text-5xl transition-colors z-50">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="relative w-full h-full flex items-center justify-center p-4">
+            <button onclick="prevImage()" class="lightbox-nav-btn absolute right-2 md:right-10 text-white w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl z-50">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-content flex flex-col items-center text-center max-w-5xl w-full">
+                <div class="relative group">
+                    <img id="lightbox-img" src="" alt="صورة الذكرى" class="max-h-[60vh] md:max-h-[70vh] max-w-full rounded-2xl shadow-[0_10px_50px_rgba(255,105,180,0.3)] object-contain border-2 border-white/10">
+                </div>
+                <div id="lightbox-caption" class="mt-6 md:mt-8 glass p-6 w-full md:w-4/5 border-t-4 border-t-pink-500 bg-white/10 backdrop-blur-xl">
+                    <h3 id="lightbox-title" class="text-2xl md:text-4xl font-black text-pink-400 mb-3 tajawal-font drop-shadow-md"></h3>
+                    <p id="lightbox-desc" class="text-white/90 text-lg md:text-2xl amiri-font leading-relaxed"></p>
+                    <div class="mt-4 text-pink-300 text-sm font-bold opacity-70" id="lightbox-date"></div>
+                </div>
+            </div>
+            <button onclick="nextImage()" class="lightbox-nav-btn absolute left-2 md:left-10 text-white w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl z-50">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
 
+    <!-- ================= الجافاسكريبت والبيانات الضخمة ================= -->
+    <script>
+        // --- الحماية والتشفير ---
+        const _0x4a2 = ["MTI1NTgwNDQ3Nw==", "MTI1NTgw", "MjAxMg==", "MDEwMTE1MDE0NjU=","bWFyaWFt","MjAxMjk5"];
         function checkPass() {
             const input = document.getElementById('pass-input').value;
-            if (_0x4a2.includes(btoa(input))) {
-                document.getElementById('login-screen').style.opacity = '0';
-                setTimeout(() => {
-                    document.getElementById('login-screen').style.display = 'none';
-                    document.getElementById('main-content').style.display = 'block';
-                    initApp();
-                }, 400);
-            } else {
-                alert('كلمة السر غير صحيحة!');
-            }
+            const btn = document.querySelector('#login-screen button');
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-white text-xl"></i> جاري التحقق...';
+            setTimeout(() => {
+                if (_0x4a2.includes(btoa(input))) {
+                    btn.innerHTML = '<i class="fa-solid fa-check text-white text-xl"></i> تم الفتح بنجاح!';
+                    btn.classList.replace('from-pink-500', 'from-green-500');
+                    btn.classList.replace('to-rose-500', 'to-emerald-500');
+                    const loginScreen = document.getElementById('login-screen');
+                    loginScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        loginScreen.style.display = 'none';
+                        document.getElementById('main-content').style.display = 'block';
+                        initApp();
+                    }, 600);
+                } else {
+                    btn.innerHTML = '<i class="fa-solid fa-xmark text-white text-xl"></i> كلمة السر غير صحيحة';
+                    btn.classList.replace('from-pink-500', 'from-red-500');
+                    btn.classList.replace('to-rose-500', 'to-red-600');
+                    const box = document.querySelector('#login-screen .glass');
+                    box.classList.add('animate-[shake_0.5s_ease-in-out]');
+                    setTimeout(() => {
+                        btn.innerHTML = '<span>فتح القلب</span> <i class="fa-solid fa-heart text-white"></i>';
+                        btn.classList.replace('from-red-500', 'from-pink-500');
+                        btn.classList.replace('to-red-600', 'to-rose-500');
+                        box.classList.remove('animate-[shake_0.5s_ease-in-out]');
+                        document.getElementById('pass-input').value = '';
+                    }, 1500);
+                }
+            }, 800);
         }
+        document.getElementById('pass-input').addEventListener('keypress', function(e) { if (e.key === 'Enter') checkPass(); });
 
-        function showPage(id) {
+        // --- إدارة الصفحات ---
+        function showPage(id, btnElement) {
             document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active-page'));
+            document.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active-nav'));
             document.getElementById(id).classList.add('active-page');
-            window.scrollTo({top:0, behavior:'smooth'});
+            if(btnElement) btnElement.classList.add('active-nav');
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
-        function initApp() {
-            // قلوب متحركة
-            setInterval(() => {
-                const heart = document.createElement('div');
-                heart.innerHTML = ['❤️', '💖', '💍', '🌸', '✨', '🌹'][Math.floor(Math.random()*6)];
-                heart.className = 'heart-rain';
-                heart.style.left = Math.random() * 100 + 'vw';
-                heart.style.fontSize = (Math.random() * 20 + 20) + 'px';
-                heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
-                document.getElementById('hearts-container').appendChild(heart);
-                setTimeout(() => heart.remove(), 6000);
-            }, 300);
+        // --- البيانات الضخمة (المصفوفات) ---
+        
+        // 1. معرض الصور
+        const galleryData = [
+            { id: 1, src: "❤❤❤❤❤❤❤.jpg", title: "البداية الجميلة", desc: "أول نظرة، أول نبضة، وأول شعور بأنكِ ستكونين كل حياتي.", date: "لحظات لا تُنسى" },
+            { id: 2, src: "💚❤💚.jpg", title: "عيونكِ سحري", desc: "في كل مرة أنظر إلى عينيك، أرى مستقبلي وحياتي القادمة بأكملها.", date: "أجمل النظرات" },
+            { id: 3, src: "❤❤❤❤💚💚💚💚.jpg", title: "نبضات متسارعة", desc: "صورة تعبر عن كل الحب الذي يسكن قلبي تجاهك يا أجمل مريم.", date: "ذكريات دافئة" },
+            { id: 4, src: "❤❤.jpg", title: "قلب واحد", desc: "رغم كل المسافات، قلوبنا تنبض معاً في نفس اللحظة ونفس الاتجاه.", date: "حب أزلي" },
+            { id: 5, src: "1.png", title: "ابتسامتكِ حياة", desc: "عندما تبتسمين، تشرق الشمس في قلبي وتختفي كل هموم الدنيا.", date: "سر سعادتي" },
+            { id: 6, src: "2.png", title: "أميرتي الصغيرة", desc: "أنتِ طفلتي المدللة، وأميرتي التي أقسمت أن أحميها مدى الحياة.", date: "وعد الحب" },
+            { id: 7, src: "3.png", title: "لحظات الجنون", desc: "أجمل أوقاتي هي تلك التي نضحك فيها معاً من أعماق قلوبنا.", date: "ضحكاتنا" },
+            { id: 8, src: "4.png", title: "السند والأمان", desc: "أنا سأكون ظهرك الذي لا ينحني، وسندك الذي لا يميل أبداً.", date: "العهد الأبدي" },
+            { id: 9, src: "5.png", title: "نجمة سمائي", desc: "أنتِ النجمة المضيئة في سماء حياتي المظلمة.", date: "نور القلب" },
+            { id: 10, src: "6.png", title: "دعوة مستجابة", desc: "لطالما دعوت الله أن يرزقني بشخص يشبه روحي، فرزقني بكِ.", date: "فضل الله" },
+            { id: 11, src: "7.png", title: "مستقبلنا معاً", desc: "أرى في ملامحك بيتنا الدافئ، وأطفالنا، وكل أحلامي المحققة.", date: "الحلم القادم" }
+        ];
 
-            // استعادة كافة الأدعية (تم إعادة الـ 50 دعاء كاملة)
-            const prayers = [
-                "اللهم احفظ مريم من كل سوء.", "اللهم اجعل الابتسامة لا تفارق وجه مريم.", "يارب يسر لمريم كل عسير.",
-                "اللهم ارزق مريم راحة البال.", "اللهم وفق مريم في دراستها.", "اللهم اكتب لمريم السعادة الأبدية.",
-                "يارب اجعل مريم من نصيبي.", "اللهم اجمعنا في حلالك عاجلاً غير آجل.", "اللهم بارك في عمر مريم.",
-                "يارب لا تحرمني من صوت مريم.", "اللهم اجعل قلب مريم معلقاً بك ثم بي.", "اللهم ابعد عن مريم رفقاء السوء.",
-                "يارب اجعلني السند لمريم دائماً.", "اللهم ارزق مريم الصحة والعافية.", "اللهم افتح لمريم أبواب الرزق.",
-                "يارب اجعل مريم قرة عين لي.", "اللهم اجعل بيت مريم عامراً بالذكر.", "اللهم استجب لدعوات مريم.",
-                "يارب طهر قلب مريم من كل هم.", "اللهم احفظ مريم لوالديها.", "اللهم اجعل مريم ملكة في بيتي.",
-                "يارب ارزق مريم الفردوس الأعلى.", "اللهم لا تريني في مريم مكروه.", "اللهم حبب مريم فيّ وحببني فيها.",
-                "يارب اجعل زواجي من مريم مباركاً.", "اللهم يسر لنا كل عائق يمنع اجتماعنا.", "اللهم اجعل مريم رفيقتي في الجنة.",
-                "يارب اسكب في قلب مريم حبي.", "اللهم اجعل مريم راضية مرضية.", "اللهم نور درب مريم بالهدى.",
-                "يارب ارزق مريم النجاح الباهر.", "اللهم اجعل مريم مباركة أينما كانت.", "اللهم كف عن مريم عيون الحاسدين.",
-                "يارب اجعل مريم أجمل نساء العالمين في عيني.", "اللهم لا تفرق بيني وبين مريم أبداً.", "اللهم ارزقنا الذرية الصالحة من مريم.",
-                "يارب اجعل مريم من عبادك الصالحين.", "اللهم اشرح صدر مريم للإيمان.", "اللهم اجعل مريم ملهمتي في الخير.",
-                "يارب لا تجعل في قلب مريم أحداً غيري.", "اللهم اجعلني فخراً لمريم.", "اللهم احفظ مريم في سفرها وإقامتها.",
-                "يارب تقبل مني هذا العمل لمريم.", "اللهم اجعل مريم فخورة بحبي لها.", "اللهم ارزق مريم قلباً خاشعاً.",
-                "يارب اجعل حياتي مع مريم جنة.", "اللهم اجعل مريم من الذاكرات كثيراً.", "اللهم ارفع قدر مريم في الدنيا والآخرة.",
-                "يارب يسر لنا شراء بيت الأحلام.", "اللهم اجعل مريم سيدة بيت عظيم.", "اللهم اجعل حبنا خالصاً لوجهك.",
-                "يارب استجب لنا واجمعنا يا كريم."
-            ];
+        // 2. الخط الزمني
+        const storyTimeline = [
+            { title: "الشرارة الأولى", desc: "في هذا اليوم تلاقت أرواحنا قبل عيوننا، شعرت بشيء مختلف، وكأنني أعرفك منذ ألف عام.", icon: "fa-bolt" },
+            { title: "أول اعتراف", desc: "حين نطقت حروفي الأولى لتعبر عن ما بقلبي، كانت لحظة توقف فيها الزمن واكتفيت بكِ.", icon: "fa-comment-dots" },
+            { title: "تأكيد العهد", desc: "تعاهدنا على أن نكون معاً في الفرح والحزن، في السهولة والصعوبة، وأن لا يفرقنا سوى الموت.", icon: "fa-handshake" },
+            { title: "تحدي الصعاب", desc: "واجهنا معاً بعض العقبات، لكن حبنا كان أقوى من كل الظروف، وتمسكنا ببعضنا أكثر.", icon: "fa-shield-heart" },
+            { title: "بناء الحلم", desc: "بدأنا نخطط لمستقبلنا، لبيتنا الصغير، ولكيف ستكون حياتنا القادمة مليئة بالحب والطمأنينة.", icon: "fa-house" },
+            { title: "الآن وإلى الأبد", desc: "أنتِ الآن ملكة قلبي، وقريباً ستكونين ملكة بيتي، وسنظل نكتب قصتنا حتى آخر نفس.", icon: "fa-infinity" }
+        ];
 
+        // 3. رسائل الحب
+        const messagesData = [
+            "مريومتي.. لا توجد لغة في العالم تستطيع أن تترجم حجم حبي لكِ. أنتِ لستِ فقط حبيبتي، بل أنتِ جزء من روحي.",
+            "إلى من تربعت على عرش قلبي: أعدكِ أمام الله أن أصونك، وأحفظك، وأجعلك أسعد إنسانة على وجه الأرض.",
+            "حين أغار عليكِ، أنا لا أشك فيكِ، بل أكره أن يشاركني أحد في النظر إلى ما أملكه أنا فقط.",
+            "وجودك في حياتي هو الدليل القاطع على أن الله يحبني، لأنه رزقني بأعظم نعمة.. رزقني بكِ.",
+            "يا أجمل ما رأت عيني.. صوتك هو الموسيقى المفضلة لقلبي، وابتسامتك هي علاجي من كل هم.",
+            "أريد أن أكون لكِ الأب في الحنان، والأخ في السند، والصديق في الجنون، والزوج في الحب الأبدي.",
+            "لو كان لي الخيار في إعادة حياتي، لاخترتكِ في كل مرة وبنفس الشغف، أنتِ قدري الأجمل.",
+            "اللهم كما زرعت حبها في قلبي بدون إرادتي، اجعلها من نصيبي بقدرتك التي وسعت كل شيء.",
+            "حبيبتي مريم.. لا تخافي من الغد، فأنا سأكون درعك الحامي، ولن أسمح لأي حزن أن يمس قلبك الرقيق.",
+            "كلما نظرت إليكِ، أدركت أن الله قد أبدع في خلقك، وجعلكِ مكافأة لقلبي المتعب.",
+            "أحبكِ لأنكِ تفهمين صمتي قبل كلامي، وتعرفين ما بقلبي من مجرد نظرة.",
+            "أنتِ وطني الذي ألجأ إليه عندما تتعبني الدنيا، وفي حضن كلماتك أجد سلامي الداخلي."
+        ];
+
+        // 4. الأدعية
+        const prayersData = [
+            "اللهم احفظ مريم من كل سوء ومكروه.", "اللهم اجعل الابتسامة لا تفارق وجه مريم.", "يارب يسر لمريم كل عسير في حياتها.",
+            "اللهم ارزق مريم راحة البال وطمأنينة القلب.", "اللهم وفق مريم في دراستها وحياتها.", "اللهم اكتب لمريم السعادة الأبدية في الدارين.",
+            "يارب اجعل مريم من نصيبي حلالاً طيباً.", "اللهم اجمعنا في بيتنا عاجلاً غير آجل.", "اللهم بارك لي في عمر مريم وصحتها.",
+            "يارب لا تحرمني من حنان ورقة مريم.", "اللهم اجعل قلب مريم معلقاً بك ثم بي.", "اللهم ابعد عن مريم كل من يريد بها شراً.",
+            "يارب اجعلني السند والظل لمريم دائماً.", "اللهم ارزق مريم الصحة والعافية والقوة.", "اللهم افتح لمريم أبواب الرزق والتوفيق.",
+            "يارب اجعل مريم قرة عين لي ولأهلها.", "اللهم اجعل بيتنا المستقبلي عامراً بالحب.", "اللهم استجب لكل دعوات مريم الخفية.",
+            "يارب طهر قلب مريم من كل هم وحزن.", "اللهم احفظ مريم لوالديها وبارك لهم فيها.", "اللهم اجعل مريم ملكة متوجة في بيتي.",
+            "يارب ارزق مريم الفردوس الأعلى من الجنة.", "اللهم لا تريني في مريم أي أذى أو مكروه.", "اللهم حبب مريم فيّ وحببني فيها أكثر وأكثر.",
+            "يارب اجعل زواجي من مريم مباركاً ميسراً.", "اللهم ذلل لنا كل الصعاب التي تقف في طريقنا.", "اللهم اجعل مريم رفيقتي في الدنيا وفي الجنة.",
+            "يارب اسكب في قلب مريم حبي وعشقي.", "اللهم اجعل مريم راضية بقضائك وقدرك.", "اللهم نور درب مريم بالهدى والتقى واليسر.",
+            "يارب ارزق مريم النجاح الباهر في كل خطوة.", "اللهم اجعل مريم مباركة أينما حلت وذهبت.", "اللهم كف عن مريم عيون الحاسدين والحاقدين."
+        ];
+
+        // 5. أسباب حبي لكِ (جديد)
+        const reasonsData = [
+            "لأنكِ تمتلكين أرق وأجمل قلب في العالم.",
+            "لأن ضحكتكِ قادرة على محو كل همومي في ثانية.",
+            "لأنكِ تفهمينني دون أن أحتاج للشرح.",
+            "لأنكِ طفلتي المدللة التي أخشى عليها من نسمة الهواء.",
+            "لأن عيونكِ تحمل سحراً يجعلني أضيع فيها كل مرة.",
+            "لأنكِ الداعم الأول لي في كل قراراتي وخطواتي.",
+            "لأنكِ تجعلينني أرغب في أن أكون أفضل نسخة من نفسي.",
+            "لأن حبكِ يمنحني القوة لمواجهة العالم بأسره.",
+            "لأنكِ تهتمين بأدق تفاصيلي التي لا يلاحظها غيرك.",
+            "لأنكِ تسامحينني بقلب صافٍ إذا أخطأت.",
+            "لأنكِ تشاركيني جنوني وضحكاتي.",
+            "لأن صوتكِ هو الأمان الذي أبحث عنه دائماً.",
+            "لأنكِ النور الذي أضاء لي طريقي في أصعب الأوقات.",
+            "لأن دعواتكِ لي هي سبب كل توفيق في حياتي.",
+            "لأنكِ ببساطة... مريم، ولا يوجد في الدنيا من يشبهك."
+        ];
+
+        // 6. وعودي لكِ (جديد)
+        const promisesData = [
+            "أعدكِ أن أكون لكِ الأب في الحنان، والأخ في السند، والحبيب في العشق.",
+            "أعدكِ أن لا أترك يدكِ أبداً مهما قست علينا الظروف والأيام.",
+            "أعدكِ أن أجعلكِ فخورة بي دائماً، وأن أعمل جاهداً لتحقيق كل أحلامنا.",
+            "أعدكِ أن أحمي قلبكِ من أي حزن، وأن أمسح دمعتكِ قبل أن تسقط.",
+            "أعدكِ أن أحترمكِ وأقدركِ أمام الجميع، وفي سرنا وعلننا.",
+            "أعدكِ أن أظل مخلصاً لكِ ولحبنا حتى آخر يوم في عمري.",
+            "أعدكِ أن أستمع لكِ دائماً، حتى وإن كانت أحاديثكِ بسيطة وعادية.",
+            "أعدكِ أن أبني لكِ بيتاً أساسه الحب، وجدرانه الأمان، وسقفه الرحمة.",
+            "أعدكِ أن أختاركِ أنتِ كل يوم، في كل صباح، وبلا أي تردد."
+        ];
+
+        // --- دوال بناء المحتوى (Rendering) ---
+        function renderGallery() {
+            const grid = document.getElementById('gallery-grid');
+            grid.innerHTML = '';
+            galleryData.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'photo-card glass bg-white/10 shadow-lg';
+                card.onclick = () => openLightbox(index);
+                card.innerHTML = `
+                    <div class="relative w-full h-64 md:h-80 bg-gray-200">
+                        <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover absolute inset-0 z-10" 
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/ffb1c1/ffffff?text=صورة+حصرية+لمريم+ومروان';">
+                        <div class="photo-overlay z-20">
+                            <h3 class="text-xl font-bold mb-1 amiri-font text-pink-200">${item.title}</h3>
+                            <p class="text-sm opacity-90 truncate">${item.desc}</p>
+                            <span class="mt-2 text-xs bg-pink-600/80 w-fit px-2 py-1 rounded-full"><i class="fa-solid fa-expand mr-1"></i> تكبير</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function renderTimeline() {
+            const container = document.getElementById('timeline-container');
+            container.innerHTML = '';
+            storyTimeline.forEach((item, index) => {
+                const direction = index % 2 === 0 ? 'left' : 'right';
+                const div = document.createElement('div');
+                div.className = `timeline-item ${direction}`;
+                div.innerHTML = `
+                    <div class="glass p-6 md:p-8 relative hover:-translate-y-2 transition-transform shadow-md bg-white/60">
+                        <i class="fa-solid ${item.icon} text-4xl text-pink-500 mb-4 opacity-80"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2 tajawal-font">${item.title}</h3>
+                        <p class="text-gray-700 amiri-font text-lg font-bold leading-relaxed">${item.desc}</p>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderMessages() {
+            const container = document.getElementById('messages-container');
+            container.innerHTML = '';
+            const bgColors = ['bg-pink-100/70', 'bg-red-50/70', 'bg-rose-100/70', 'bg-white/70'];
+            messagesData.forEach((msg, index) => {
+                const randomBg = bgColors[index % bgColors.length];
+                const div = document.createElement('div');
+                div.className = `glass p-6 rounded-3xl ${randomBg} break-inside-avoid relative overflow-hidden group`;
+                div.innerHTML = `
+                    <i class="fa-solid fa-thumbtack absolute top-4 right-4 text-pink-400 -rotate-45 text-xl group-hover:animate-bounce"></i>
+                    <i class="fa-solid fa-quote-right text-3xl text-pink-300 opacity-40 mb-2 block"></i>
+                    <p class="text-xl amiri-font font-bold text-gray-800 leading-relaxed z-10 relative">${msg}</p>
+                    <div class="mt-4 text-left">
+                        <span class="inline-block handwritten text-pink-600 font-bold transform -rotate-6">مروان ❤️</span>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderPrayers() {
             const list = document.getElementById('prayers-list');
-            prayers.forEach((p, i) => {
+            list.innerHTML = '';
+            prayersData.forEach((p, i) => {
                 const d = document.createElement('div');
-                d.className = 'glass p-6 text-right font-bold hover:bg-white/40 transition-all cursor-default';
-                d.innerHTML = `<span class="text-pink-600 mr-2">${i+1}.</span> ${p}`;
+                d.className = 'glass p-5 md:p-6 text-right font-bold hover:bg-pink-100/50 transition-all cursor-default flex gap-3 items-start border-b-2 border-transparent hover:border-pink-300 shadow-sm bg-white/40';
+                d.innerHTML = `
+                    <div class="bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 shadow-inner mt-1 text-sm">${i + 1}</div>
+                    <p class="text-gray-800 text-lg amiri-font leading-relaxed pt-1">${p}</p>
+                `;
                 list.appendChild(d);
             });
         }
+
+        function renderReasons() {
+            const container = document.getElementById('reasons-container');
+            container.innerHTML = '';
+            reasonsData.forEach((reason, index) => {
+                const div = document.createElement('div');
+                div.className = 'glass p-6 text-center hover:bg-pink-50 transition-colors group cursor-default border border-pink-200';
+                div.innerHTML = `
+                    <div class="w-12 h-12 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center mx-auto mb-4 text-xl font-black group-hover:scale-110 transition-transform">
+                        ${index + 1}
+                    </div>
+                    <p class="text-gray-800 font-bold amiri-font text-lg leading-relaxed">${reason}</p>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderPromises() {
+            const container = document.getElementById('promises-container');
+            container.innerHTML = '';
+            promisesData.forEach((promise, index) => {
+                const div = document.createElement('div');
+                div.className = 'glass p-6 md:p-8 flex items-center gap-4 hover:translate-x-2 transition-transform bg-white/50 border-r-4 border-r-blue-500';
+                div.innerHTML = `
+                    <i class="fa-solid fa-handshake-angle text-4xl text-blue-500 opacity-80 shrink-0"></i>
+                    <p class="text-gray-800 font-bold amiri-font text-xl md:text-2xl leading-relaxed">${promise}</p>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // --- نظام الـ Lightbox ---
+        let currentImageIndex = 0;
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbTitle = document.getElementById('lightbox-title');
+        const lbDesc = document.getElementById('lightbox-desc');
+        const lbDate = document.getElementById('lightbox-date');
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            updateLightboxContent();
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                lightbox.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }, 50);
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            lightbox.classList.remove('show');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }, 400);
+        }
+
+        function updateLightboxContent() {
+            const item = galleryData[currentImageIndex];
+            lbImg.style.opacity = '0';
+            document.getElementById('lightbox-caption').style.opacity = '0';
+            setTimeout(() => {
+                lbImg.src = item.src;
+                lbImg.onerror = function() { this.src = 'https://via.placeholder.com/800x600/ffb1c1/ffffff?text=مريم+%E2%9D%A4%EF%B8%8F+مروان'; };
+                lbTitle.textContent = item.title;
+                lbDesc.textContent = item.desc;
+                lbDate.innerHTML = `<i class="fa-regular fa-calendar-days ml-1"></i> ${item.date}`;
+                lbImg.style.opacity = '1';
+                document.getElementById('lightbox-caption').style.opacity = '1';
+            }, 200);
+        }
+
+        function nextImage() { currentImageIndex = (currentImageIndex + 1) % galleryData.length; updateLightboxContent(); }
+        function prevImage() { currentImageIndex = (currentImageIndex - 1 + galleryData.length) % galleryData.length; updateLightboxContent(); }
+
+        document.addEventListener('keydown', function(e) {
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+            }
+        });
+
+        // --- نظام الجسيمات (Hearts/Stars) ---
+        function startParticles() {
+            const container = document.getElementById('hearts-container');
+            const icons = ['fa-heart', 'fa-star', 'fa-seedling', 'fa-ring', 'fa-gem'];
+            const colors = ['text-pink-500', 'text-red-500', 'text-white', 'text-rose-400', 'text-yellow-300'];
+            setInterval(() => {
+                if(document.hidden) return;
+                const particle = document.createElement('i');
+                const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                particle.className = `particle fa-solid ${randomIcon} ${randomColor}`;
+                const size = Math.random() * 1.5 + 0.5;
+                const startLeft = Math.random() * 100;
+                const duration = Math.random() * 5 + 5;
+                particle.style.left = `${startLeft}vw`;
+                particle.style.fontSize = `${size}rem`;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.opacity = Math.random() * 0.5 + 0.3;
+                container.appendChild(particle);
+                setTimeout(() => particle.remove(), duration * 1000);
+            }, 400);
+        }
+
+        // --- حساب الأعمار بدقة ---
+        function calculateExactAge(birthDateString) {
+            const now = new Date();
+            const birth = new Date(birthDateString);
+
+            let years = now.getFullYear() - birth.getFullYear();
+            let months = now.getMonth() - birth.getMonth();
+            let days = now.getDate() - birth.getDate();
+            let hours = now.getHours() - birth.getHours();
+            let minutes = now.getMinutes() - birth.getMinutes();
+            let seconds = now.getSeconds() - birth.getSeconds();
+
+            if (seconds < 0) { minutes--; seconds += 60; }
+            if (minutes < 0) { hours--; minutes += 60; }
+            if (hours < 0) { days--; hours += 24; }
+            if (days < 0) {
+                months--;
+                // الحصول على عدد أيام الشهر السابق
+                const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                days += prevMonth.getDate();
+            }
+            if (months < 0) { years--; months += 12; }
+
+            return { years, months, days, hours, minutes, seconds };
+        }
+
+        function startAgeCounters() {
+            // تواريخ الميلاد الدقيقة
+            // مريم: 9 سبتمبر 2012
+            const mariamBirth = "2012-09-09T00:00:00";
+            // مروان: 25 يونيو 2010 الفجر (نعتبرها الساعة 04:00 صباحاً بتوقيت مصر)
+            const marwanBirth = "2010-06-25T04:00:00";
+
+            setInterval(() => {
+                const mariamAge = calculateExactAge(mariamBirth);
+                const marwanAge = calculateExactAge(marwanBirth);
+
+                // تحديث عداد مريم
+                document.getElementById('m-years').innerText = mariamAge.years;
+                document.getElementById('m-months').innerText = mariamAge.months;
+                document.getElementById('m-days').innerText = mariamAge.days;
+                document.getElementById('m-hours').innerText = mariamAge.hours;
+                document.getElementById('m-minutes').innerText = mariamAge.minutes;
+                document.getElementById('m-seconds').innerText = mariamAge.seconds;
+
+                // تحديث عداد مروان
+                document.getElementById('ma-years').innerText = marwanAge.years;
+                document.getElementById('ma-months').innerText = marwanAge.months;
+                document.getElementById('ma-days').innerText = marwanAge.days;
+                document.getElementById('ma-hours').innerText = marwanAge.hours;
+                document.getElementById('ma-minutes').innerText = marwanAge.minutes;
+                document.getElementById('ma-seconds').innerText = marwanAge.seconds;
+            }, 1000);
+        }
+
+        // --- دالة التهيئة الرئيسية (Init) ---
+        function initApp() {
+            renderGallery();
+            renderTimeline();
+            renderMessages();
+            renderPrayers();
+            renderReasons();   // القسم الجديد
+            renderPromises();  // القسم الجديد
+            startParticles();
+            startAgeCounters();
+            
+            // Animation for scrolling
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-[fadeInPage_0.8s_forwards]');
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.glass').forEach(el => el.style.opacity = '1');
+        }
+        
+        // منع النسخ للحماية (اختياري)
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+        }
     </script>
 </body>
-
 </html>
